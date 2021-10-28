@@ -16,9 +16,7 @@ namespace GildedRose
             foreach (Item item in Items)
             {
                 var itemProcessor = ItemProcessor.GetInstanceFor(item);
-                itemProcessor.UpdateItemQuality(item);
-
-                
+                itemProcessor.UpdateItemQuality(item);                
             }
         }
     }

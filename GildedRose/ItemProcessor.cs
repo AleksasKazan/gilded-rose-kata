@@ -9,64 +9,7 @@ namespace GildedRose
         public const string Conjured = "Conjured Mana Cake";
 
         public virtual void UpdateItemQuality(Item Item)
-        {
-            //if (Item.Name != AgedBrie && Item.Name != Backstage)
-            //{
-            //    if (IsAboveLowestQualityValue(Item) && Item.Name != Sulfuras)
-            //    {
-            //        Item.Quality--;
-            //    }
-            //}
-            //else
-            //{
-            //    if (IsUnderHighestQualityValue(Item))
-            //    {
-            //        Item.Quality++;
-
-            //        if (Item.Name == Backstage)
-            //        {
-            //            if (Item.SellIn < 11 && IsUnderHighestQualityValue(Item))
-            //            {
-            //                Item.Quality++;
-            //            }
-
-            //            if (Item.SellIn < 6 && IsUnderHighestQualityValue(Item))
-            //            {
-            //                Item.Quality++;
-            //            }
-            //        }
-            //    }
-            //}
-
-            //if (Item.Name != Sulfuras)
-            //{
-            //    Item.SellIn--;
-            //}
-
-            //if (IsUnderLowestSellInValue(Item))
-            //{
-            //    if (Item.Name != AgedBrie)
-            //    {
-            //        if (Item.Name != Backstage)
-            //        {
-            //            if (IsAboveLowestQualityValue(Item) && Item.Name != Sulfuras)
-            //            {
-            //                Item.Quality--;
-            //            }
-            //        }
-            //        else
-            //        {
-            //            Item.Quality -= Item.Quality;
-            //        }
-            //    }
-            //    else
-            //    {
-            //        if (IsUnderHighestQualityValue(Item))
-            //        {
-            //            Item.Quality++;
-            //        }
-            //    }
-            //}
+        {           
         }
         public static bool IsUnderLowestSellInValue(Item Item) => Item.SellIn < 0;
         public static bool IsUnderHighestQualityValue(Item Item) => Item.Quality < 50;
@@ -90,9 +33,6 @@ namespace GildedRose
 
                 default:
                     return new DefaultItemProcessor(item);
-
-                //default:
-                //    return new ItemProcessor();
             }
         }
     }

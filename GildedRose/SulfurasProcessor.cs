@@ -10,8 +10,7 @@ namespace GildedRose
         }
 
         public override void UpdateItemQuality(Item item)
-        {
-            
+        {            
         }
     }
 }
