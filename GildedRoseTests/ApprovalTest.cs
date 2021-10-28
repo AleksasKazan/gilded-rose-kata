@@ -19,9 +19,8 @@ namespace GildedRoseTests
 
             Program.Main(new string[] { });
             var output = fakeoutput.ToString();
-
             var result = File.ReadAllText("expectedResult.txt");
-            
+
             Assert.Equal(result, output);
         }
     }

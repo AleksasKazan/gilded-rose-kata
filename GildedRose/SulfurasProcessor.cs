@@ -1,10 +1,17 @@
 ﻿using System;
 namespace GildedRose
 {
-    public class SulfurasProcessor
+    public class SulfurasProcessor : ItemProcessor
     {
-        public SulfurasProcessor()
+        private readonly Item _item;
+        public SulfurasProcessor(Item item)
         {
+            _item = item;
+        }
+
+        public override void UpdateItemQuality(Item item)
+        {
+            
         }
     }
 }
